@@ -3,13 +3,13 @@ module ActiveMerchant #:nodoc:
     # Convenience methods that can be included into a custom Credit Card object, such as an ActiveRecord based Credit Card object.
     module CreditCardMethods
       CARD_COMPANIES = {
-        'visa': /^4\d{12}(\d{3})?(\d{3})?$/,
-        'master': /^(5[1-5]\d{4}|677189|222[1-9]\d{2}|22[3-9]\d{3}|2[3-6]\d{4}|27[01]\d{3}|2720\d{2})\d{10}$/,
-        'discover': /^(6011|65\d{2}|64[4-9]\d)\d{12}|(62\d{14})$/,
-        'american_express': /^3[47]\d{13}$/,
-        'diners_club': /^3(0[0-5]|[68]\d)\d{11}$/,
-        'elo': /^((((636368)|(438935)|(504175)|(451416)|(636297))\d{0,10})|((5067)|(4576)|(4011))\d{0,12})$/,
-        'hipercard': /^(606282\d{10}(\d{3})?)|(3841\d{15})$/
+        'visa' => /^4\d{12}(\d{3})?(\d{3})?$/,
+        'master' => /^(5[1-5]\d{4}|677189|222[1-9]\d{2}|22[3-9]\d{3}|2[3-6]\d{4}|27[01]\d{3}|2720\d{2})\d{10}$/,
+        'discover' => /^(6011|65\d{2}|64[4-9]\d)\d{12}|(62\d{14})$/,
+        'american_express' => /^3[47]\d{13}$/,
+        'diners_club' => /^3(0[0-5]|[68]\d)\d{11}$/,
+        'elo' => /^((((636368)|(438935)|(504175)|(451416)|(636297))\d{0,10})|((5067)|(4576)|(4011))\d{0,12})$/,
+        'hipercard' => /^(606282\d{10}(\d{3})?)|(3841\d{15})$/
       }
 
       # http://www.barclaycard.co.uk/business/files/bin_rules.pdf
